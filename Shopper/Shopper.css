@@ -1,0 +1,114 @@
+.main-title {
+    font-size: 30px;
+}
+
+.Buttons {
+    margin-top: 8px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+nav span {
+    padding: 3px;
+}
+
+.bi-search {
+    color: red;
+}
+
+.bi-person {
+    color: goldenrod;
+}
+
+.bi-heart {
+    color: green;
+}
+
+.bi-cart3 {
+    color: blue;
+}
+
+.bi-lightning-charge-fill {
+    color: goldenrod;
+}
+
+article {
+    background-color: black;
+    color: white;
+    margin-top: 7px;
+    font-size: 20px;
+}
+
+.bi-linkedin {
+    color: blue;
+}
+
+.bi-facebook {
+    color: blue;
+}
+
+.bi-twitter {
+    color: blue;
+}
+
+.bi-instagram {
+    color: purple;
+}
+
+.bi-youtube {
+    color: red;
+}
+
+footer {
+    margin-top: 565px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+    color: white;
+    height: 110px;
+    padding: 20px;
+    
+}
+
+.footer-title {
+    color: white;
+    font-size: 25px;
+
+}
+
+.socials {
+    margin-top: 25px;
+    padding: 3px;
+    font-size: 12px;
+
+}
+
+.socials span {
+    padding: 3px;
+}
+
+.cart-num {
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    font-size: 10px;
+    padding: 3px;
+    text-align: center;
+}
+.info{
+    color:white
+    
+}
+ul
+{
+    list-style-type: none;
+    margin-left: -40px;
+}
