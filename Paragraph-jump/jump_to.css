@@ -1,0 +1,37 @@
+body{
+    font-family: sans-serif;
+}
+header{
+    text-align: center;
+    display: block;
+    background-color: lightseagreen;
+}
+div{
+    display: block;
+    border: 1px solid black;
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+    background-color: lightseagreen;
+    color: white;
+    margin-top: 30px;
+}
+.two{
+    font-size: 30px;
+    height: 900px;
+    overflow: auto;
+}
+section{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+a{
+    text-decoration: none;
+    color:white 
+}
+li a{
+    color: blue;
+}
+li{
+    text-align: center;
+}
