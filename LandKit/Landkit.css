@@ -1,0 +1,79 @@
+body{
+    font-family: sans-serif;
+}
+header{
+    display: grid;
+    grid-template-columns: 4fr 5fr 3fr;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+.welcome{
+    margin-top: 200px;
+    margin-left: 150px;
+    font-size: 50px;
+}
+.description{
+    margin-top: 50px;
+    margin-left: 150px;
+    font-size: 20px;
+}
+.logo{
+    color: blue;
+    font-size: 40px;
+    margin-top: -5px;
+}
+.buy{
+    display: inline-block;
+    background-color: blue;
+    width: 120px;  
+    color: white; 
+    text-align: center;
+    padding-top: 16px;
+    margin-left: 140px;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: -20px;
+}
+.menu{
+    display: flex;
+    word-spacing: 30px;
+    color: gray;
+    margin-left: -20px;
+}
+.description{
+    line-height: 50px;
+}
+.view{
+    display: inline-block;
+    background-color: blue;
+    height: 40px;
+    width: 230px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 8px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.docs{
+    display: inline-block;
+    background-color: lightgray;
+    height: 40px;
+    width: 210px;
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 8px;
+    margin-left: 13px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+.image{
+    margin-top: 160px;
+    margin-left: 130px;
+}
