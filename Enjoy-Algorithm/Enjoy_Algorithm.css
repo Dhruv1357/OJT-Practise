@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    justify-content: space-between;
+
+}
+body{
+    font-family: sans-serif;
+    padding-left: 90px;
+}
+.links{
+    display: flex;
+    gap: 30px;
+}
+.content{
+    line-height: 30px;
+}
+main{
+    margin-top: 50px;
+    display: flex;
+    gap: 250px;
+    font-size: 18px;
+}
+.sub{
+    border-color: darkmagenta;
+    background-color: white;
+    color: darkmagenta;
+    height: 60px;
+    width: 130px;
+    font-size: 20px;
+}
+.images{
+    display: flex;
+    gap: 80px;
+    margin-top: 30px;
+
+}
+.input{
+    margin-top: 20px;
+}
