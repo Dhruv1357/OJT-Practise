@@ -37,3 +37,6 @@ main{
 .input{
     margin-top: 20px;
 }
+a{
+    text-decoration: none;
+}
