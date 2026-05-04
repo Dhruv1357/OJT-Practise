@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .black
+        {
+            background-color: black;
+        }
+        .red
+        {
+            background-color: red;
+        }
+        .white
+        {
+            background-color: white;
+        }
+        .blue
+        {
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Change</button>
+
+    <script>
+        const btn = document.getElementById("btn");
+        let count = 0;
+
+        btn.addEventListener('click',function(){
+            count++;
+
+            if(count%4 == 1)
+        {
+            document.body.classList.remove("white");
+            document.body.classList.add("black");
+        }
+            else if(count%4 == 2)
+        {
+            document.body.classList.remove("black");
+            document.body.classList.add("red");
+        }
+            else if(count%4 == 3)
+        {
+            document.body.classList.remove("red");
+            document.body.classList.add("blue");
+        }
+        else
+        {
+            document.body.classList.remove("blue");
+            document.body.classList.add("white");
+        }
+        })
+    </script>
+</body>
+</html>
