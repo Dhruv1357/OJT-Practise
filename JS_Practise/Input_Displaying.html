@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <div>Enter email</div>
+        <input type="email" placeholder="Email" class="email">
+        <div>Enter Password</div>
+        <input type="password" placeholder="Password" class="password">
+        <button class="btn">Submit</button>
+        <div class="res"></div>
+    </form>
+
+    <script>
+        let em = document.querySelector(".email");
+        let pass = document.querySelector(".password");
+        let bttn = document.querySelector(".btn");
+        let result = document.querySelector(".res");
+
+        bttn.addEventListener('click',function(e){
+            e.preventDefault();
+            result.innerText = "Email: "+em.value + " \nPassword: "+pass.value;
+            em.innerText = "";
+            pass.innerText = "";
+        })
+
+    </script>
+</body>
+</html>
