@@ -23,7 +23,8 @@
             val = val.replaceAll(" ","")
                         .toUpperCase();
 
-            console.log(val)
+            console.log(val);
+
             for(let i=0;i<=val.length/2;i++)
             {
                 if((val[i]) != (val[val.length - 1 - i]))
@@ -33,7 +34,7 @@
                 break;
             }
             }
-            
+
             if(flag)
             {
                 res.textContent = "This is a Palindrome";
