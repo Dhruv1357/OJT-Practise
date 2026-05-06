@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="inp"> <button class="btn">Check</button>
+    <div class="res"></div>
+
+    <script>
+        const inp = document.querySelector(".inp");
+        const btn = document.querySelector(".btn");
+        let res = document.querySelector(".res");
+
+        btn.addEventListener('click', function () {
+            let val = (inp.value);
+            let flag = 1;
+
+            val = val.replaceAll(" ","")
+                        .toUpperCase();
+
+            console.log(val)
+            for(let i=0;i<=val.length/2;i++)
+            {
+                if((val[i]) != (val[val.length - 1 - i]))
+            {
+                res.textContent = "This is not a Palindrome";
+                flag = 0;
+                break;
+            }
+            }
+            if(flag)
+            {
+                res.textContent = "This is a Palindrome";
+            }
+        })
+    </script>
+</body>
+
+</html>
