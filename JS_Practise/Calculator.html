@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span>Input 1</span> <input type="number" class="inp1"> 
+        <button class="btn1" style="margin: 8px;">+</button><button class="btn2" style="margin: 8px;">-</button><button class="btn3" style="margin: 8px;">x</button><button class="btn4" style="margin: 8px;">/</button>
+        <input type="number" class="inp2"><span> Input 2</span>
+        <div class="res"></div>
+    </div>
+
+    <script>
+        const inp1 = document.querySelector(".inp1")
+        const inp2 = document.querySelector(".inp2")
+        
+        const btn1 = document.querySelector(".btn1")
+        const btn2 = document.querySelector(".btn2")
+        const btn3 = document.querySelector(".btn3")
+        const btn4 = document.querySelector(".btn4")
+        const res = document.querySelector(".res");
+
+        btn1.addEventListener('click',function()
+        {
+            res.textContent = Number(inp1.value) + Number(inp2.value);
+        })
+        btn2.addEventListener('click',function()
+        {
+            res.textContent = inp1.value - inp2.value;
+        })
+        btn3.addEventListener('click',function()
+        {
+            res.textContent = inp1.value * inp2.value;
+        })
+        btn4.addEventListener('click',function()
+        {
+            res.textContent = inp1.value / inp2.value;
+        })
+        
+    </script>
+</body>
+</html>
