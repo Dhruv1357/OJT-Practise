@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" class="inp"> <button class="btn">Add</button>
+    <ul class="todo"></ul>
+
+    <script>
+
+        let inp = document.querySelector(".inp");
+        let todo = document.querySelector(".todo");
+        let btn = document.querySelector(".btn");
+        
+        function add() {
+            let value = inp.value;
+            let li = document.createElement('li');
+            li.innerHTML = `<p>${value}</p><button class = "btn2">Delete</button>`;
+            todo.append(li);
+
+            inp.value = '';
+
+            let btn2 = li.querySelector('.btn2');
+
+            btn2.addEventListener('click',function(){
+                li.remove();
+            })
+
+        }
+        btn.addEventListener('click', add);
+
+    </script>
+</body>
+
+</html>
