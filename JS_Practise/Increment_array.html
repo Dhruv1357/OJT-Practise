@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" id="inp">
+    <button id="btn">Display</button>
+    <div id="out"></div>
+
+    <script>
+        let users = [
+    { name: "Sachin", age: 48, email: "sachin@google.com", salary: 50000 },
+    { name: "Dhoni", age: 40, email: "dhoni@google.com", salary: 45000 },
+    { name: "Rohit", age: 34, email: "rohit@google.com", salary: 42000 },
+    { name: "Kohli", age: 33, email: "kohli@google.com", salary: 48000 },
+    { name: "Bhuvi", age: 31, email: "bhuvi@google.com", salary: 35000 },
+    { name: "Bumrah", age: 28, email: "bumrah@google.com", salary: 38000 },
+    { name: "Raina", age: 35, email: "raina@egoogle.com", salary: 32000 },
+    { name: "Jadeja", age: 33, email: "jadeja@google.com", salary: 37000 },
+    { name: "Yuvi", age: 40, email: "yuvi@google.com", salary: 34000 },
+    { name: "Ishant", age: 33, email: "ishant@google.com", salary: 30000 },
+    { name: "Ashwin", age: 35, email: "ashwin@google.com", salary: 36000 },
+    { name: "Kapil", age: 63, email: "kapil@google.com", salary: 55000 }
+];
+
+        const out = document.querySelector("#out");
+        const btn = document.querySelector("#btn");
+        const inp = document.querySelector("#inp");
+
+        btn.addEventListener('click',function(){
+
+            let newArr = users.filter(function(elem){
+                if(elem.age >= 30 && elem.age <= 40)
+            {
+                return elem;
+            }
+            })
+
+            let salary;
+            let newSalary;
+            let age;
+            let email;
+            let name;
+
+            let final = newArr.map(function(elem){
+                salary = elem.salary;
+                newSalary = elem.salary + 5000;
+                age = elem.age;
+                email = elem.email;
+                name = elem.name;
+
+                let obj = {name,age,email,salary,newSalary};
+                return obj;
+            })
+
+            out.innerHTML = '';
+            final.forEach(function(elem){
+                let p = document.createElement('p');
+                p.textContent = elem.name + " " + elem.age + " " + elem.email + " " + elem.salary + " " + elem.newSalary;
+                out.append(p);
+            })
+        })
+    </script>
+</body>
+</html>
