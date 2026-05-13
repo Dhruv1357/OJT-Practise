@@ -124,19 +124,19 @@
                 <span style="font-size: 20px; margin-left: 45%;">Sign In</span> <br>
                 <div style="margin-left: 35px;">
                     <span>User ID</span> <br>
-                    <input type="text" name="" id="" placeholder=" <MRN / SRN>@icai.org or App Seq No"
+                    <input type="text" name="" id="userId" placeholder=" <MRN / SRN>@icai.org or App Seq No"
                         style="width: 500px; padding: 10px; border-radius: 10px; border: 1px solid gray; margin-top: 5px;">
                     <br>
                     <br>
                     <span>Password</span> <br>
-                    <input type="password" placeholder="Please Enter Password"
+                    <input type="password" placeholder="Please Enter Password" id="pass"
                         style="width: 500px; padding: 10px; border-radius: 10px; border: 1px solid gray; margin-top: 5px;">
                     <br>
                     <span style="display: flex; justify-content: flex-end; margin-right: 30px; margin-top: 8px;">
                         <button class="btn" style="color: navy;">Forgot Password</button>
                     </span> <br>
                     <span>
-                        <button class="btn"
+                        <button class="btn" id="sign-in"
                             style="width: 93%; border-radius: 20px; color: white; height: 50px; background-color: navy;">Sign
                             In</button>
                     </span>
@@ -158,6 +158,18 @@
             </div>
         </section>
     </main>
+
+
+    <script>
+        const sign = document.querySelector("#sign-in");
+        const user = document.querySelector("#userId");
+        const pass = document.querySelector("#pass");
+
+        sign.addEventListener('click',function(){
+            console.log(user.value);
+            console.log(pass.value);
+        })
+    </script>
 </body>
 
 </html>
